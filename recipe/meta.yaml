@@ -1,5 +1,5 @@
 {% set name = "recordlinkage" %}
-{% set version = "0.14" %}
+{% set version = "0.15" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +8,13 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
 
-  sha256: 92e636314bb068b6f6dbc93090998e9e753e3a895972f1a584a4d389a99af93e
+  sha256: 688af1e78be77fce48fca8adff89e383f5483aee87d1213b35d43519b78ff027
 
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -39,7 +39,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A Python library to link records in or between data sources'
+  summary: A Python library to link records in or between data sources
   doc_url: https://recordlinkage.readthedocs.io/
 
 
