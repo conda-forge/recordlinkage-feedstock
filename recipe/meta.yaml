@@ -27,7 +27,7 @@ requirements:
     - pandas >=1,<3
     - scipy >=1
     - scikit-learn >=1
-    - jellyfish>=1
+    - jellyfish >=1
     - joblib
     - numexpr
 
@@ -46,4 +46,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - Maerville
+    - zaneselvans
+    - zschira
+    - jdangerx
